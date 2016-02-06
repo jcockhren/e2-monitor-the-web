@@ -1,1 +1,5 @@
-var app = angular.module("monitor-the-web", ['ngRoute', 'ngMaterial']);
+(function() {
+  'use strict';
+  var app = angular.module("app", ['ngRoute', 'ngMaterial']);
+
+})();
