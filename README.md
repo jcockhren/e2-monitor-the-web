@@ -10,4 +10,6 @@ This app will consist of 3 features.
 
 1. Install Bower & npm from the assets/lib folder
 
-```bower install && npm install```
+```
+bower install && npm install
+```
