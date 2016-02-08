@@ -1,0 +1,24 @@
+{
+  "name": "monitor-the-web",
+  "homepage": "https://github.com/jcockhren/e2-monitor-the-web",
+  "authors": [
+    "Lauren Rouse <lauren.l.rouse@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^2.2.0",
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-material": "^1.0.5"
+  }
+}
