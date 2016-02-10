@@ -8,9 +8,21 @@
    * but for Objects or Arrays you could get clever with
    */
 
-  function MonitorCtrl () {
+  function MonitorCtrl ($http) {
     this.doSometing = function () {
-      // SomeFactory.doSomething();
+
+    this.searchURL = ""
+
+
+      // $http.get(url).then(function(response){
+
+      // }), fuction(err){
+      //   console.log(err.message);
+      // })
+
+
+
+
     };
   }
 

@@ -1,1 +1,16 @@
-<h4>testing testing 2</h4>
+<div md-theme="default" layout="row" layout-align="center center">
+  <div flex="30"></div>
+
+  <md-content layout-padding layout-align="center center" flex="40">
+    <div ng-show="x"></div> <!-- chart area -->
+
+    <h2>{{monitorCtrl.searchURL}}</h2>
+
+    <md-input-container class="md-block">
+      <input required type="text"  placeholder="Enter URL" ng-model="monitorCtrl.searchURL" />
+    </md-input-container>
+    <md-button ng-click="x" layout layout-align="center center">Monitor</md-button>
+  </md-content>
+
+  <div flex="30"></div>
+</div>
