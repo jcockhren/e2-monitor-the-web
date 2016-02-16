@@ -8,9 +8,9 @@
 
 
     <md-input-container class="md-block">
-      <input required type="text"  placeholder="Enter URL" ng-model="monitorCtrl.searchURL" />
+      <input required type="text"  placeholder="Enter URL" ng-model="monitorCtrl.url" />
     </md-input-container>
-    <md-button ng-click="monitorCtrl.monitor()" layout layout-align="center center">Monitor</md-button>
+    <md-button ng-click="monitorCtrl.monitor(monitorCtrl.url)" layout layout-align="center center">Monitor</md-button>
     <h5>Hint: https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js will work</h5>
   </md-content>
 
