@@ -8,20 +8,16 @@
    * but for Objects or Arrays you could get clever with
    */
 
-  function MonitorCtrl ($http) {
-    this.doSometing = function () {
+  function MonitorCtrl ($http, MonitorService) {
 
-    this.searchURL = ""
+    this.url = "";
 
-
-      // $http.get(url).then(function(response){
-
-      // }), fuction(err){
-      //   console.log(err.message);
-      // })
-
-
-
+    this.monitor = function(url){
+      MonitorService.monitorServ(url);
+        // .then(function(nextresponse){
+        //   var one = nextresponse;
+        //   console.log(one);
+        // })
 
     };
   }
