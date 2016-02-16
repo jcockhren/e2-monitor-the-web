@@ -12,12 +12,14 @@
 
     this.url = "";
 
-    this.monitor = function(url){
-      MonitorService.monitorServ(url);
-        // .then(function(nextresponse){
-        //   var one = nextresponse;
-        //   console.log(one);
-        // })
+    this.monitor = function(){
+      MonitorService.monitorServ(this.url)
+        .then (function(response){
+          console.log(response);
+        },
+          function(errorMessage){
+            console.warn(errorMessage);
+          });
 
     };
   }
