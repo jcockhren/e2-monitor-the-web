@@ -8,12 +8,12 @@
 
     function config ($routeProvider) {
       $routeProvider
-      // .when('/', {
-      //   templateUrl: 'app/components/auth/authView.html',
-      //   controller: 'AuthCtrl as authCtrl'
-      // })
+      .when('/', {
+        templateUrl: 'app/components/monitor/monitorView.html',
+        controller: 'MonitorCtrl as monitorCtrl'
+      })
       .otherwise({redirectTo: '/'});
-    };
+    }
 
 
 })();
