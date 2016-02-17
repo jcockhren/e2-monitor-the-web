@@ -7,7 +7,6 @@
     // this.sendTime = "";
 
     this.monitorServ = function(url){
-      // this.sendTime = Date.now();
       var message = $http({
         method: 'get',
         url: url
@@ -15,7 +14,7 @@
 
       return(message.then (handleSuccess, handleError));
 
-  }
+  };
 
 
   function handleError( response ) {
