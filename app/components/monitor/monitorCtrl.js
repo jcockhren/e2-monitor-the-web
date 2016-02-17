@@ -8,14 +8,20 @@
    * but for Objects or Arrays you could get clever with
    */
 
-  function MonitorCtrl ($http, MonitorService) {
+  function MonitorCtrl (MonitorService) {
 
     this.url = "";
+    // this.sendTime = [];
+    this.responseObj = {};
+    this.size = "";
+    // this.receiveTime = "";
 
     this.monitor = function(){
       MonitorService.monitorServ(this.url)
         .then (function(response){
           console.log(response);
+          // return this.size = response.response.data.length
+          console.log("bytes ", 20+(response.response.data.length/2)*4);
         },
           function(errorMessage){
             console.warn(errorMessage);
