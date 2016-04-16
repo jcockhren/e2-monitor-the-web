@@ -1,20 +1,18 @@
 <div md-theme="default" layout="row" layout-align="center center">
-  <div flex="30"></div>
+  <div flex="20"></div>
 
-  <md-content layout-padding layout-align="center center" flex="40">
+  <md-content class="container" layout-padding layout-align="center center" flex="60">
     <div ng-show="x"></div> <!-- chart area -->
-
-    <h2>{{monitorCtrl.searchURL}}</h2>
-
+      <div class="md-display-2" id="results">
+        Results For:
+      </div>
+      <div class="md-headline url">{{monitorCtrl.searchURL}}</div>
 
     <md-input-container class="md-block">
-      <input required type="text"  placeholder="Enter URL" ng-model="monitorCtrl.url" />
+      <input required type="text"  placeholder="Enter URL" ng-model="monitorCtrl.searchURL" />
     </md-input-container>
-    <md-button ng-click="monitorCtrl.monitor(monitorCtrl.url)" layout layout-align="center center">Monitor</md-button>
-    <h5>Hint: https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js will work</h5>
+    <md-button class="md-primary" ng-click="x" layout layout-align="center center">Monitor</md-button>
   </md-content>
 
-
-
-  <div flex="30"></div>
+  <div flex="20"></div>
 </div>
